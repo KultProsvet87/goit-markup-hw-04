@@ -144,7 +144,8 @@ header {
 }
 
 .contact {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -152,6 +153,22 @@ header {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.mail-icon {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+
+    padding-right: 10px;
+}
+
+.phone-icon {
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+            
+    padding-right: 10px;
 }
 
 .link:hover,
@@ -221,6 +238,8 @@ address {
         url(../images/bg_img.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+
     text-align: center;
 }
 

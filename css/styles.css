@@ -27,6 +27,7 @@ html {
     --benefits-icon-bg-color: #F5F4FA;
     --social-icon-color: #AFB1B8;
     --social-icon-hover-color : #ffffff;
+    --clients-icon-color: #AFB1B8;
     }
 
 /* globall styles */
@@ -410,8 +411,6 @@ address {
 .social-list {
     display: flex;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .social-list > .item + .item {
@@ -427,7 +426,8 @@ address {
     color: var(--social-icon-color);
 }
 
-.social:hover {
+.social:hover,
+.social:focus {
     color: var(--social-icon-hover-color);
     background-color: var(--accent-color);
 }
@@ -436,6 +436,51 @@ address {
     width: 20px;
     height: 20px;
     fill: currentColor;
+}
+
+
+
+/* clients */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+}
+
+.clients-list > .item + .item {
+    margin-left: 30px;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid var(--clients-icon-color);
+    color: var(--clients-icon-color);
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* portfolio */
